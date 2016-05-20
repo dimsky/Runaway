@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB7BFC321CEEEC9E00F4CF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7BFC311CEEEC9E00F4CF76 /* Foundation.framework */; };
+		AB7BFC3C1CEEEC9E00F4CF76 /* Runaway.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB7BFC2E1CEEEC9E00F4CF76 /* Runaway.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Runaway.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7BFC311CEEEC9E00F4CF76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB7BFC361CEEEC9E00F4CF76 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		AB7BFC371CEEEC9E00F4CF76 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		AB7BFC391CEEEC9E00F4CF76 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		AB7BFC3A1CEEEC9E00F4CF76 /* Runaway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runaway-Prefix.pch"; sourceTree = "<group>"; };
+		AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Runaway.mm; sourceTree = "<group>"; };
+		AB7BFC401CEEEC9E00F4CF76 /* Runaway.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Runaway.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Runaway.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB7BFC2A1CEEEC9E00F4CF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7BFC321CEEEC9E00F4CF76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7BFC241CEEEC9E00F4CF76 = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC331CEEEC9E00F4CF76 /* Runaway */,
+				AB7BFC301CEEEC9E00F4CF76 /* Frameworks */,
+				AB7BFC2F1CEEEC9E00F4CF76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7BFC2F1CEEEC9E00F4CF76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC2E1CEEEC9E00F4CF76 /* Runaway.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7BFC301CEEEC9E00F4CF76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC311CEEEC9E00F4CF76 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB7BFC331CEEEC9E00F4CF76 /* Runaway */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */,
+				AB7BFC341CEEEC9E00F4CF76 /* Package */,
+				AB7BFC381CEEEC9E00F4CF76 /* Supporting Files */,
+			);
+			path = Runaway;
+			sourceTree = "<group>";
+		};
+		AB7BFC341CEEEC9E00F4CF76 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC351CEEEC9E00F4CF76 /* DEBIAN */,
+				AB7BFC3D1CEEEC9E00F4CF76 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		AB7BFC351CEEEC9E00F4CF76 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC361CEEEC9E00F4CF76 /* control.txt */,
+				AB7BFC371CEEEC9E00F4CF76 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		AB7BFC381CEEEC9E00F4CF76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC391CEEEC9E00F4CF76 /* PackageVersion.plist */,
+				AB7BFC3A1CEEEC9E00F4CF76 /* Runaway-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB7BFC3D1CEEEC9E00F4CF76 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC3E1CEEEC9E00F4CF76 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		AB7BFC3E1CEEEC9E00F4CF76 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC3F1CEEEC9E00F4CF76 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		AB7BFC3F1CEEEC9E00F4CF76 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				AB7BFC401CEEEC9E00F4CF76 /* Runaway.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB7BFC2B1CEEEC9E00F4CF76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AB7BFC2D1CEEEC9E00F4CF76 /* Runaway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7BFC431CEEEC9E00F4CF76 /* Build configuration list for PBXNativeTarget "Runaway" */;
+			buildPhases = (
+				AB7BFC291CEEEC9E00F4CF76 /* Sources */,
+				AB7BFC2A1CEEEC9E00F4CF76 /* Frameworks */,
+				AB7BFC2B1CEEEC9E00F4CF76 /* Headers */,
+				AB7BFC2C1CEEEC9E00F4CF76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runaway;
+			productName = Runaway;
+			productReference = AB7BFC2E1CEEEC9E00F4CF76 /* Runaway.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7BFC251CEEEC9E00F4CF76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					AB7BFC2D1CEEEC9E00F4CF76 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = AB7BFC281CEEEC9E00F4CF76 /* Build configuration list for PBXProject "Runaway" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB7BFC241CEEEC9E00F4CF76;
+			productRefGroup = AB7BFC2F1CEEEC9E00F4CF76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7BFC2D1CEEEC9E00F4CF76 /* Runaway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB7BFC2C1CEEEC9E00F4CF76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB7BFC291CEEEC9E00F4CF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7BFC3C1CEEEC9E00F4CF76 /* Runaway.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB7BFC411CEEEC9E00F4CF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		AB7BFC421CEEEC9E00F4CF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		AB7BFC441CEEEC9E00F4CF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Runaway/Runaway-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		AB7BFC451CEEEC9E00F4CF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Runaway/Runaway-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB7BFC281CEEEC9E00F4CF76 /* Build configuration list for PBXProject "Runaway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7BFC411CEEEC9E00F4CF76 /* Debug */,
+				AB7BFC421CEEEC9E00F4CF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7BFC431CEEEC9E00F4CF76 /* Build configuration list for PBXNativeTarget "Runaway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7BFC441CEEEC9E00F4CF76 /* Debug */,
+				AB7BFC451CEEEC9E00F4CF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7BFC251CEEEC9E00F4CF76 /* Project object */;
+}
