@@ -30,6 +30,9 @@ CHMethod(0, unsigned int, WCDeviceStepObject, m7StepCount) {
     NSString *path = [docDir stringByAppendingPathComponent:HookSettingsFile];
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     int value = ((NSNumber *)dict[StepCountKey]).intValue;
+    if (value < 0) {
+        return CHSuper(0, WCDeviceStepObject, m7StepCount);
+    }
     return value;
 }
 
@@ -73,19 +76,20 @@ CHMethod(2, void, CMessageMgr, AsyncOnAddMsg, id, arg1, MsgWrap, id, arg2) {
                 NSArray *array = [m_nsContent componentsSeparatedByString:@"#"];
                 if (array.count == 2) {
                     StepCount = ((NSNumber *)array[1]).intValue;
-
-                    // save to file
-                    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-                    NSString *docDir = [paths objectAtIndex:0];
-                    if (!docDir){ return;}
-                    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-                    NSString *path = [docDir stringByAppendingPathComponent:HookSettingsFile];
-                    dict[StepCountKey] = [NSNumber numberWithInt:StepCount];
-                    [dict writeToFile:path atomically:YES];
-
                     NSLog(@"微信步数已修改为 : %d", StepCount);
                 }
+            } else if([m_nsContent rangeOfString:@"恢复微信步数"].location != NSNotFound) {
+                StepCount = -1;
+                NSLog(@"微信步数已经恢复");
             }
+            // save to file
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *docDir = [paths objectAtIndex:0];
+            if (!docDir){ return;}
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            NSString *path = [docDir stringByAppendingPathComponent:HookSettingsFile];
+            dict[StepCountKey] = [NSNumber numberWithInt:StepCount];
+            [dict writeToFile:path atomically:YES];
         }
     }
 }
