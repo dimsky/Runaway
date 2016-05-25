@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB7BFC321CEEEC9E00F4CF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7BFC311CEEEC9E00F4CF76 /* Foundation.framework */; };
 		AB7BFC3C1CEEEC9E00F4CF76 /* Runaway.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */; };
+		AB7BFC471CEEECE400F4CF76 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7BFC461CEEECE400F4CF76 /* CaptainHook.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AB7BFC3A1CEEEC9E00F4CF76 /* Runaway-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runaway-Prefix.pch"; sourceTree = "<group>"; };
 		AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Runaway.mm; sourceTree = "<group>"; };
 		AB7BFC401CEEEC9E00F4CF76 /* Runaway.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Runaway.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Runaway.plist; sourceTree = "<group>"; };
+		AB7BFC461CEEECE400F4CF76 /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		AB7BFC331CEEEC9E00F4CF76 /* Runaway */ = {
 			isa = PBXGroup;
 			children = (
+				AB7BFC461CEEECE400F4CF76 /* CaptainHook.h */,
 				AB7BFC3B1CEEEC9E00F4CF76 /* Runaway.mm */,
 				AB7BFC341CEEEC9E00F4CF76 /* Package */,
 				AB7BFC381CEEEC9E00F4CF76 /* Supporting Files */,
@@ -127,6 +130,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7BFC471CEEECE400F4CF76 /* CaptainHook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
